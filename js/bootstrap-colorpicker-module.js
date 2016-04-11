@@ -1,3 +1,7 @@
+/* commonjs package manager support (eg componentjs) */
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
+  module.exports = 'colorpicker.module';
+}
 angular.module('colorpicker.module', [])
     .factory('Helper', function () {
       'use strict';
